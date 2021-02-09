@@ -1,0 +1,145 @@
+{{define "title"}}Calendar{{end}}
+
+{{define "content"}}
+
+<script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+
+
+<div class="min-h-screen flex justify-center bg-gray-50 py-12 px-4">
+    <div class="max-w-5xl w-full space-y-8">
+        <div class="object-none object-top container mx-auto bg-white p-10 rounded-2xl">
+            <div class="container flex ">
+                <div class="container p-8">
+                    <div class="grid grid-cols-1">
+                        <div>
+                            <img class="justify-center rounded-full max-h-24" src="https://pbs.twimg.com/media/EhgKhQkX0AAtBzT?format=jpg&name=medium"> </img>
+
+                            <p class="text-lg text-left object-top font-semibold">Jazzy Purrs</p>
+                            <p class="text-medium text-left object-top font-normal">This is a description for this cat's calendar page.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container pt-8">
+                    <div class="grid grid-cols-2 grid-flow-col">
+                        <div class="pr-96">
+                        <div id="litepicker" class=""></div>
+                        </div>
+                        <div class="pl-8">
+                            <fieldset>
+                                <legend class="sr-only">
+                                Server size
+                                </legend>
+                                <div class="space-y-4">
+                                <label class="relative block rounded-lg border border-gray-300 bg-white shadow-sm px-6 py-4 cursor-pointer hover:border-gray-400 sm:flex sm:justify-between focus-within:ring-1 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+                                    <input type="radio" name="server_size" value="Hobby" class="sr-only" aria-labelledby="server-size-0-label" aria-describedby="server-size-0-description-0 server-size-0-description-1">
+                                    <div class="flex items-center">
+                                    <div class="text-sm">
+                                        <p id="server-size-0-label" class="font-medium text-gray-900">
+                                        Hobby
+                                        </p>
+                                        <div id="server-size-0-description-0" class="text-gray-500">
+                                        <p class="sm:inline">8GB / 4 CPUs</p>
+                                        <span class="hidden sm:inline sm:mx-1" aria-hidden="true">&middot;</span>
+                                        <p class="sm:inline">160 GB SSD disk</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div id="server-size-0-description-1" class="mt-2 flex text-sm sm:mt-0 sm:block sm:ml-4 sm:text-right">
+                                    <div class="font-medium text-gray-900">$40</div>
+                                    <div class="ml-1 text-gray-500 sm:ml-0">/mo</div>
+                                    </div>
+                                    <!-- Checked: "border-indigo-500", Not Checked: "border-transparent" -->
+                                    <div class="border-transparent absolute -inset-px rounded-lg border-2 pointer-events-none" aria-hidden="true"></div>
+                                </label>
+                            
+                                <label class="relative block rounded-lg border border-gray-300 bg-white shadow-sm px-6 py-4 cursor-pointer hover:border-gray-400 sm:flex sm:justify-between focus-within:ring-1 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+                                    <input type="radio" name="server_size" value="Startup" class="sr-only" aria-labelledby="server-size-1-label" aria-describedby="server-size-1-description-0 server-size-1-description-1">
+                                    <div class="flex items-center">
+                                    <div class="text-sm">
+                                        <p id="server-size-1-label" class="font-medium text-gray-900">
+                                        Startup
+                                        </p>
+                                        <div id="server-size-1-description-0" class="text-gray-500">
+                                        <p class="sm:inline">12GB / 6 CPUs</p>
+                                        <span class="hidden sm:inline sm:mx-1" aria-hidden="true">&middot;</span>
+                                        <p class="sm:inline">256 GB SSD disk</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div id="server-size-1-description-1" class="mt-2 flex text-sm sm:mt-0 sm:block sm:ml-4 sm:text-right">
+                                    <div class="font-medium text-gray-900">$80</div>
+                                    <div class="ml-1 text-gray-500 sm:ml-0">/mo</div>
+                                    </div>
+                                    <!-- Checked: "border-indigo-500", Not Checked: "border-transparent" -->
+                                    <div class="border-transparent absolute -inset-px rounded-lg border-2 pointer-events-none" aria-hidden="true"></div>
+                                </label>
+                            
+                                <label class="relative block rounded-lg border border-gray-300 bg-white shadow-sm px-6 py-4 cursor-pointer hover:border-gray-400 sm:flex sm:justify-between focus-within:ring-1 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+                                    <input type="radio" name="server_size" value="Business" class="sr-only" aria-labelledby="server-size-2-label" aria-describedby="server-size-2-description-0 server-size-2-description-1">
+                                    <div class="flex items-center">
+                                    <div class="text-sm">
+                                        <p id="server-size-2-label" class="font-medium text-gray-900">
+                                        Business
+                                        </p>
+                                        <div id="server-size-2-description-0" class="text-gray-500">
+                                        <p class="sm:inline">16GB / 8 CPUs</p>
+                                        <span class="hidden sm:inline sm:mx-1" aria-hidden="true">&middot;</span>
+                                        <p class="sm:inline">512 GB SSD disk</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div id="server-size-2-description-1" class="mt-2 flex text-sm sm:mt-0 sm:block sm:ml-4 sm:text-right">
+                                    <div class="font-medium text-gray-900">$160</div>
+                                    <div class="ml-1 text-gray-500 sm:ml-0">/mo</div>
+                                    </div>
+                                    <!-- Checked: "border-indigo-500", Not Checked: "border-transparent" -->
+                                    <div class="border-transparent absolute -inset-px rounded-lg border-2 pointer-events-none" aria-hidden="true"></div>
+                                </label>
+                            
+                                <label class="relative block rounded-lg border border-gray-300 bg-white shadow-sm px-6 py-4 cursor-pointer hover:border-gray-400 sm:flex sm:justify-between focus-within:ring-1 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+                                    <input type="radio" name="server_size" value="Enterprise" class="sr-only" aria-labelledby="server-size-3-label" aria-describedby="server-size-3-description-0 server-size-3-description-1">
+                                    <div class="flex items-center">
+                                    <div class="text-sm">
+                                        <p id="server-size-3-label" class="font-medium text-gray-900">
+                                        Enterprise
+                                        </p>
+                                        <div id="server-size-3-description-0" class="text-gray-500">
+                                        <p class="sm:inline">32GB / 12 CPUs</p>
+                                        <span class="hidden sm:inline sm:mx-1" aria-hidden="true">&middot;</span>
+                                        <p class="sm:inline">1024 GB SSD disk</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div id="server-size-3-description-1" class="mt-2 flex text-sm sm:mt-0 sm:block sm:ml-4 sm:text-right">
+                                    <div class="font-medium text-gray-900">$240</div>
+                                    <div class="ml-1 text-gray-500 sm:ml-0">/mo</div>
+                                    </div>
+                                    <!-- Checked: "border-indigo-500", Not Checked: "border-transparent" -->
+                                    <div class="border-transparent absolute -inset-px rounded-lg border-2 pointer-events-none" aria-hidden="true"></div>
+                                </label>
+                                </div>
+                            </fieldset>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    window.disableLitepickerStyles = true;
+    const picker = new Litepicker({ 
+        element: document.getElementById('litepicker'),
+        inlineMode: true
+    });
+</script>
+
+{{end}}
+
+
+
+<!-- https://medium.com/@cboyce.collab/calendar-with-range-selection-using-react-tailwind-and-framer-motion-9aad9d25ca04
+https://tailwindcomponents.com/component/calendar-ui-with-tailwindcss-and-alpinejs -->

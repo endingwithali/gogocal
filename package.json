@@ -1,0 +1,36 @@
+{
+  "name": "gogocalendar",
+  "version": "1.0.0",
+  "description": "A simple self-hosted calendar booking service written in Go with CalDAV support!",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/endingwithali/gogocal.git"
+  },
+  "author": "Ali and Jon Kingsley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/endingwithali/gogocal/issues"
+  },
+  "homepage": "https://github.com/endingwithali/gogocal#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-bro": "^2.0.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^14.0.0"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.2.1",
+    "autoprefixer": "^10.2.4",
+    "litepicker": "^2.0.11",
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2"
+  }
+}

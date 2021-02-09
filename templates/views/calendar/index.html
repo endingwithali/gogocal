@@ -1,0 +1,36 @@
+{{define "title"}}Calendar{{end}}
+
+{{define "content"}}
+<div class="min-h-screen flex justify-center bg-gray-50 py-12 px-4">
+    <div class="max-w-md w-full space-y-8">
+        <div class="object-none object-top container mx-auto bg-white p-10 rounded-2xl">
+            <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900 object-none object-top">
+                Calendar
+            </h2>
+            <br/>
+            <div class="flex justify-center">
+                <img class="justify-center rounded-full max-h-24" src="https://pbs.twimg.com/media/EhgKhQkX0AAtBzT?format=jpg&name=medium"> </img>
+            </div>
+            <br/>
+
+            <p class="text-lg text-center object-top font-semibold">Jazzy Purrs</p>
+            <p class="text-medium text-center object-top font-normal">This is a description for this cat's calendar page.</p>
+
+            <br/>
+            <div class="grid grid-span-1 gap-2  rounded-lg">
+                <div class="... rounded text-center	 leading-10 hover:bg-purple-200">
+                    <a href="/calendar/{{.User}}/15mins">15 min</a>
+                </div>
+                <div class="... rounded text-center	 leading-10 hover:bg-purple-200">
+                    <a href="/calendar/{{.User}}/50mins">50 min</a>
+                </div>
+                <div class="... rounded text-center	 leading-10 hover:bg-purple-200">
+                    <a href="/calendar/{{.User}}/142mins">142 min</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{{end}}
